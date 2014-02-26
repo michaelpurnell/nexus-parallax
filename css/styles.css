@@ -1,0 +1,334 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html { height: 101%; }
+body { font-size: 62.5%; line-height: 1; font-family: Helvetica, Tahoma, Arial, sans-serif; background: #121212; color: #f0f0f0; outline-style:solid; outline-color:#000; }
+
+::selection { background: #0099FF; color: #FFF; }
+::-moz-selection { background:#008AE3; border-radius: 5px 5px 5px 5px; }
+::-webkit-selection { background: #a2ec39; color: #323232; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; } 
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+h1 { font-family: 'Lato', sans-serif; color: #0099ff; font-size: 4.6em; line-height: 1.45em; margin-bottom: 20px; text-shadow: 0px 0px #0099ff; font-weight: bold;} 
+
+h3 { font-family: 'Lato', sans-serif; color: #FFF; font-size: 3.5em; line-height: 1.45em; text-shadow: 2px 2px #000;
+font-weight: bold; } 
+
+h2 { display: inline-block; font-size: 2.9em; padding: 12px 17px; background:#008AE3;
+	border-radius: 5px 5px 5px 5px; font-weight: bold; font-family: Arial, Tahoma, sans-serif; 
+	width: 281px; text-align: center; }
+
+
+p { font-size: 2.25em; line-height: 1.35em; padding: 2px 0; margin-bottom: 15px; color:#FFF; }
+
+.clear{ clear:both;}
+
+/* top navigation */
+#navigation {  
+  display: block;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 70px;
+  background: rgba(255,255,255,0.75);
+  z-index: 9999;
+}
+#logo {
+	display: block; width: 220px; margin: 0 auto 0 60px; float:left;
+}
+#topnav {  
+  max-width: 900px;
+  min-width: 380px;
+  margin: 0 auto;
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+  clear: both;
+}
+
+#topnav li { }
+
+#topnav li a { 
+  display: block;
+  float: left;
+  color: #53574d;
+  padding: 0px 11px;
+  margin-right: 15px;
+  font-size: 1.6em;
+  line-height: 70px;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+#topnav li a:hover { 
+  color: #7d8079;
+  background: rgba(255,255,255,0.65);
+}
+
+#topnav li.current a { 
+  background: rgba(255,255,255,0.7);
+  color: #0099FF;
+  border-bottom: 4px solid #0099FF;
+}
+
+
+/* main content sections */
+#content { display: block; width: 100%; overflow: hidden; }
+
+.wrapper { 
+  display: block;
+  width: 1000px; 
+  min-width: 380px; 
+  margin: 0 auto;
+}
+
+#home { 
+  background: url('../images/concert-phone.png') no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  min-height: 790px;
+  padding-top: 85px;
+  /*margin-bottom: 40px;*/
+  /*box-shadow: inset 1px -9px 20px -6px #000;*/
+}
+
+#signup {
+  padding: 15px 6px;
+  padding-top: 28px;
+  margin-bottom: 40px;
+}
+
+#company {
+  padding: 15px 6px;
+  padding-top: 80px;
+  background:#0099FF;
+  color:#000;
+}
+
+#company h3 {
+font-family: 'Lato', sans-serif;
+color: #FFF;
+font-size: 36px;
+line-height: 1.45em;
+margin-bottom: 20px;
+text-shadow: 0px 0px #000;
+font-weight: bold;
+}
+
+#portfolio {
+  background: url('../images/small-business-owner.png') no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 500px;
+  padding-top: 75px;
+  /*box-shadow: inset 1px -9px 20px -6px #000;  */
+}
+
+#portfolio p {
+font-size: 2.45em;
+line-height: 1.35em;
+padding: 2px 0;
+margin-bottom: 15px;
+color: #FFF;
+/*text-shadow: 2px 2px #FFF;*/
+font-weight: bold;
+/*background: rgba(255,255,255,0.75);*/
+border-radius: 5px 5px 5px 5px;
+}
+
+#contact {
+  background:#0099FF;
+  height:450px;
+}
+
+#contact h1 {
+font-family: 'Lato', sans-serif;
+color: #FFF;
+font-size: 4.5em;
+line-height: 1.45em;
+margin-bottom: 20px;
+text-shadow: 0px 0px #000;
+font-weight: bold;
+}
+
+#signuptext h3{
+	font-family: 'Lato', sans-serif;
+color: #FFF;
+font-size: 36px;
+line-height: 1.45em;
+margin-bottom: 20px;
+text-shadow: 2px 2px #000;
+font-weight: bold;
+}
+
+#foot { display: block; background:#0099FF; text-align:center;}
+
+
+/* basic contact inputs */
+.cform { 
+  display: block;
+  width: 400px;
+  padding: 6px 5px;
+  color: #636363;
+  font-size: 1.4em;
+  margin-bottom: 12px;
+}
+
+.txtarea {
+  display: block;
+  width: 550px;
+  height: 90px;
+  padding: 4px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #636363;
+  font-size: 1.45em;
+  line-height: 1.2em;
+  margin-bottom: 15px;
+}
+.textfield{
+	 background:url('../images/signup_txtbox.png') no-repeat; 
+	 background-position:initial initial;
+  background-repeat:no-repeat no-repeat;
+  border:none;
+  color:#0099FF;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:28px;
+  font-weight:normal;
+  height:42px;
+  margin: 33px 235px -50px 25px;
+  width:400px;
+  float:left;
+}
+.signup_bt1{
+  /*background:url('../images/signup_btn.png') no-repeat; */
+  cursor:pointer;
+  border:none;
+   margin: 0 50px 0 0;
+  float:right;
+  width:173px;
+  height:61px;
+}
+.signup_btn{
+	background: #0099FF;
+  /*background:url('../images/signup_btn.png') no-repeat; */
+  cursor:pointer;
+  text-align:center;
+  border-radius: 5px 5px 5px 5px;
+  border:none;
+  margin: 0 50px 0 0;
+  float:right;
+  width:173px;
+  height:61px;
+}
+ 
+.signup_btn h3{
+	font-family: 'Lato', sans-serif;
+color: #FFF;
+font-size: 3.5em;
+line-height: 1.45em;
+text-shadow: 0px 1px #000;
+font-weight: bold;
+}
+.signup_btn:hover{
+	background:#008AE3;
+  /*background:url('../images/signup_btn.png') no-repeat; */
+  cursor:pointer;
+  text-align:center;
+  border-radius: 5px 5px 5px 5px;
+  border:none;
+  margin: 0 50px 0 0;
+  float:right;
+  width:173px;
+  height:61px;
+}
+
+.contactus_btn{
+	background:#FFF;
+  /*background:url('../images/signup_btn.png') no-repeat; */
+  cursor:pointer;
+  text-align:center;
+  border-radius: 5px 5px 5px 5px;
+  border:none;
+  margin: 0 50px 0 0;
+  width:173px;
+  height:61px;
+}
+ 
+.contactus_btn h3{
+	font-family: 'Lato', sans-serif;
+color: #0099FF;
+font-size: 3.5em;
+line-height: 1.45em;
+text-shadow: 0px 0px #000;
+font-weight: bold;
+}
+.contactus_btn:hover{
+	background:#0099FF; 
+  /*background:url('../images/signup_btn.png') no-repeat; */
+  cursor:pointer;
+  text-align:center;
+  border-radius: 5px 5px 5px 5px;
+  border: #FFF;
+  border-style:solid;
+  margin: 0 50px 0 0;
+  width:173px;
+  height:61px;
+} 
+.contactus_btn h3:hover{
+	font-family: 'Lato', sans-serif;
+color: #FFF;
+font-size: 3.5em;
+line-height: 1.45em;
+text-shadow: 0px 0px #000;
+font-weight: bold;
+}
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Tenor Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Nobile', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Didact Gothic', sans-serif;
+
+
+
+*/
+
+@media only screen and (max-width: 320px) {
+	body{
+		color:#F00
+	}
+	p{color:#0F0;
+	}
+	#topnav li a { 
+	float: left;
+	color: #53574d;
+	}
+}
